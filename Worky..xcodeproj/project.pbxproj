@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,28 @@
 		111C9C7A25C1570900E63289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111C9C7825C1570900E63289 /* Main.storyboard */; };
 		111C9C7C25C1570B00E63289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111C9C7B25C1570B00E63289 /* Assets.xcassets */; };
 		111C9C7F25C1570B00E63289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111C9C7D25C1570B00E63289 /* LaunchScreen.storyboard */; };
-		1122F2EB25CA947900DF9199 /* AddClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F2EA25CA947900DF9199 /* AddClientController.swift */; };
+		113B9A5C25F0F5790078D553 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113B9A5B25F0F5790078D553 /* UserViewController.swift */; };
+		113B9A5F25F0F6C00078D553 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113B9A5E25F0F6C00078D553 /* User.swift */; };
+		113CB18226259BB600BDA963 /* OrdersDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CB18126259BB600BDA963 /* OrdersDataBase.swift */; };
+		113CB18526259BD300BDA963 /* CompletedOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CB18426259BD300BDA963 /* CompletedOrdersController.swift */; };
+		113CB1882625AD3A00BDA963 /* CompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CB1872625AD3A00BDA963 /* CompletedTableViewCell.swift */; };
 		116C372225C98ABC0074647E /* ManagmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C372125C98ABC0074647E /* ManagmentViewController.swift */; };
 		116C372525C98B870074647E /* ManagmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C372425C98B870074647E /* ManagmentTableViewCell.swift */; };
+		11A64E06261787CF008470EF /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A64E05261787CF008470EF /* ToDoController.swift */; };
+		11A72CFE25F7A6E100E944E7 /* ClientsDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A72CFD25F7A6E100E944E7 /* ClientsDataBase.swift */; };
+		11A72D0525F7C26400E944E7 /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A72D0425F7C26400E944E7 /* ClientTableViewCell.swift */; };
+		11A72D0825F7C80C00E944E7 /* MainClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A72D0725F7C80C00E944E7 /* MainClientViewController.swift */; };
+		11D4C762261F0F3600D83167 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4C761261F0F3600D83167 /* AnimationViewController.swift */; };
+		11D4C7752624781400D83167 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4C7742624781400D83167 /* OrdersTableViewCell.swift */; };
+		11D4C7782624782B00D83167 /* OrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4C7772624782B00D83167 /* OrdersController.swift */; };
+		11D4C77B2624787900D83167 /* OrdersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4C77A2624787900D83167 /* OrdersModel.swift */; };
+		11D4C77E2624791500D83167 /* AddOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4C77D2624791500D83167 /* AddOrderController.swift */; };
+		11E70C092601F04400822EF6 /* MOBI250.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E70C082601F04400822EF6 /* MOBI250.swift */; };
+		11E70C0C260201CD00822EF6 /* MainMOBEScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E70C0B260201CD00822EF6 /* MainMOBEScreen.swift */; };
+		11E70C0F2603508D00822EF6 /* MOBI120.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E70C0E2603508D00822EF6 /* MOBI120.swift */; };
+		11E70C12260355E100822EF6 /* MOBI200.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E70C11260355E100822EF6 /* MOBI200.swift */; };
+		11E70C1526035E2100822EF6 /* MOBI300.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E70C1426035E2100822EF6 /* MOBI300.swift */; };
+		A5BC287DEAD7C5D39D11F35F /* Pods_Worky_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355CD04F8CC3A6DA346C0065 /* Pods_Worky_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +48,30 @@
 		111C9C7B25C1570B00E63289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111C9C7E25C1570B00E63289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111C9C8025C1570B00E63289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1122F2EA25CA947900DF9199 /* AddClientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientController.swift; sourceTree = "<group>"; };
+		113B9A5B25F0F5790078D553 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		113B9A5E25F0F6C00078D553 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		113CB18126259BB600BDA963 /* OrdersDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersDataBase.swift; sourceTree = "<group>"; };
+		113CB18426259BD300BDA963 /* CompletedOrdersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedOrdersController.swift; sourceTree = "<group>"; };
+		113CB1872625AD3A00BDA963 /* CompletedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTableViewCell.swift; sourceTree = "<group>"; };
 		116C372125C98ABC0074647E /* ManagmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagmentViewController.swift; sourceTree = "<group>"; };
 		116C372425C98B870074647E /* ManagmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagmentTableViewCell.swift; sourceTree = "<group>"; };
+		11A64E05261787CF008470EF /* ToDoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
+		11A72CFD25F7A6E100E944E7 /* ClientsDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsDataBase.swift; sourceTree = "<group>"; };
+		11A72D0425F7C26400E944E7 /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
+		11A72D0725F7C80C00E944E7 /* MainClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClientViewController.swift; sourceTree = "<group>"; };
+		11D4C761261F0F3600D83167 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		11D4C7742624781400D83167 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		11D4C7772624782B00D83167 /* OrdersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersController.swift; sourceTree = "<group>"; };
+		11D4C77A2624787900D83167 /* OrdersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersModel.swift; sourceTree = "<group>"; };
+		11D4C77D2624791500D83167 /* AddOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderController.swift; sourceTree = "<group>"; };
+		11E70C082601F04400822EF6 /* MOBI250.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBI250.swift; sourceTree = "<group>"; };
+		11E70C0B260201CD00822EF6 /* MainMOBEScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMOBEScreen.swift; sourceTree = "<group>"; };
+		11E70C0E2603508D00822EF6 /* MOBI120.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBI120.swift; sourceTree = "<group>"; };
+		11E70C11260355E100822EF6 /* MOBI200.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBI200.swift; sourceTree = "<group>"; };
+		11E70C1426035E2100822EF6 /* MOBI300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBI300.swift; sourceTree = "<group>"; };
+		355CD04F8CC3A6DA346C0065 /* Pods_Worky_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Worky_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF883269893FB4F6FA275E95 /* Pods-Worky..release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worky..release.xcconfig"; path = "Target Support Files/Pods-Worky./Pods-Worky..release.xcconfig"; sourceTree = "<group>"; };
+		DB69145FFDB5B0905B3AA415 /* Pods-Worky..debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worky..debug.xcconfig"; path = "Target Support Files/Pods-Worky./Pods-Worky..debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +79,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BC287DEAD7C5D39D11F35F /* Pods_Worky_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B168889025B069AE8100261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB69145FFDB5B0905B3AA415 /* Pods-Worky..debug.xcconfig */,
+				CF883269893FB4F6FA275E95 /* Pods-Worky..release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		111C9C6625C1570900E63289 = {
 			isa = PBXGroup;
 			children = (
 				111C9C7125C1570900E63289 /* Worky. */,
 				111C9C7025C1570900E63289 /* Products */,
+				0B168889025B069AE8100261 /* Pods */,
+				29EFF87F9E016593BF9AC2E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,18 +117,108 @@
 			isa = PBXGroup;
 			children = (
 				111C9C7225C1570900E63289 /* AppDelegate.swift */,
-				116C372425C98B870074647E /* ManagmentTableViewCell.swift */,
-				116C372125C98ABC0074647E /* ManagmentViewController.swift */,
 				111C9C7425C1570900E63289 /* SceneDelegate.swift */,
+				11D4C76A262477A400D83167 /* Managment */,
+				11D4C7682624773200D83167 /* Clients */,
+				11D4C766262476D500D83167 /* User */,
+				11D4C765262476A900D83167 /* Completed orders */,
+				11D4C764262476A100D83167 /* Orders */,
+				11D4C75B261F0B4F00D83167 /* Launch */,
+				11A64E032617874E008470EF /* ToDo */,
+				11E70C072601F01E00822EF6 /* MOBI screen */,
 				111C9C7625C1570900E63289 /* ViewController.swift */,
 				111C9C7825C1570900E63289 /* Main.storyboard */,
-				1122F2EA25CA947900DF9199 /* AddClientController.swift */,
-				11051B7825C9A79D00477F32 /* ClientsViewController.swift */,
 				111C9C7B25C1570B00E63289 /* Assets.xcassets */,
 				111C9C7D25C1570B00E63289 /* LaunchScreen.storyboard */,
 				111C9C8025C1570B00E63289 /* Info.plist */,
 			);
 			path = Worky.;
+			sourceTree = "<group>";
+		};
+		11A64E032617874E008470EF /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				11A64E05261787CF008470EF /* ToDoController.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		11D4C75B261F0B4F00D83167 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				11D4C761261F0F3600D83167 /* AnimationViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		11D4C764262476A100D83167 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				11D4C7742624781400D83167 /* OrdersTableViewCell.swift */,
+				11D4C7772624782B00D83167 /* OrdersController.swift */,
+				11D4C77A2624787900D83167 /* OrdersModel.swift */,
+				11D4C77D2624791500D83167 /* AddOrderController.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		11D4C765262476A900D83167 /* Completed orders */ = {
+			isa = PBXGroup;
+			children = (
+				113CB18126259BB600BDA963 /* OrdersDataBase.swift */,
+				113CB18426259BD300BDA963 /* CompletedOrdersController.swift */,
+				113CB1872625AD3A00BDA963 /* CompletedTableViewCell.swift */,
+			);
+			path = "Completed orders";
+			sourceTree = "<group>";
+		};
+		11D4C766262476D500D83167 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				113B9A5E25F0F6C00078D553 /* User.swift */,
+				113B9A5B25F0F5790078D553 /* UserViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		11D4C7682624773200D83167 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				11A72D0425F7C26400E944E7 /* ClientTableViewCell.swift */,
+				11A72D0725F7C80C00E944E7 /* MainClientViewController.swift */,
+				11051B7825C9A79D00477F32 /* ClientsViewController.swift */,
+				11A72CFD25F7A6E100E944E7 /* ClientsDataBase.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		11D4C76A262477A400D83167 /* Managment */ = {
+			isa = PBXGroup;
+			children = (
+				116C372425C98B870074647E /* ManagmentTableViewCell.swift */,
+				116C372125C98ABC0074647E /* ManagmentViewController.swift */,
+			);
+			path = Managment;
+			sourceTree = "<group>";
+		};
+		11E70C072601F01E00822EF6 /* MOBI screen */ = {
+			isa = PBXGroup;
+			children = (
+				11E70C082601F04400822EF6 /* MOBI250.swift */,
+				11E70C0B260201CD00822EF6 /* MainMOBEScreen.swift */,
+				11E70C0E2603508D00822EF6 /* MOBI120.swift */,
+				11E70C11260355E100822EF6 /* MOBI200.swift */,
+				11E70C1426035E2100822EF6 /* MOBI300.swift */,
+			);
+			path = "MOBI screen";
+			sourceTree = "<group>";
+		};
+		29EFF87F9E016593BF9AC2E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				355CD04F8CC3A6DA346C0065 /* Pods_Worky_.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 111C9C8325C1570B00E63289 /* Build configuration list for PBXNativeTarget "Worky." */;
 			buildPhases = (
+				9315C830FCB59DB1B32F736B /* [CP] Check Pods Manifest.lock */,
 				111C9C6B25C1570900E63289 /* Sources */,
 				111C9C6C25C1570900E63289 /* Frameworks */,
 				111C9C6D25C1570900E63289 /* Resources */,
+				EF8E3087CB2EAECC6CACCA73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,18 +288,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9315C830FCB59DB1B32F736B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Worky.-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF8E3087CB2EAECC6CACCA73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worky./Pods-Worky.-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Worky./Pods-Worky.-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Worky./Pods-Worky.-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		111C9C6B25C1570900E63289 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D4C7782624782B00D83167 /* OrdersController.swift in Sources */,
+				113CB18226259BB600BDA963 /* OrdersDataBase.swift in Sources */,
+				113B9A5C25F0F5790078D553 /* UserViewController.swift in Sources */,
+				11D4C77B2624787900D83167 /* OrdersModel.swift in Sources */,
 				111C9C7725C1570900E63289 /* ViewController.swift in Sources */,
+				11E70C1526035E2100822EF6 /* MOBI300.swift in Sources */,
+				11E70C0C260201CD00822EF6 /* MainMOBEScreen.swift in Sources */,
+				11E70C092601F04400822EF6 /* MOBI250.swift in Sources */,
 				111C9C7325C1570900E63289 /* AppDelegate.swift in Sources */,
+				11A72CFE25F7A6E100E944E7 /* ClientsDataBase.swift in Sources */,
+				11A64E06261787CF008470EF /* ToDoController.swift in Sources */,
 				116C372525C98B870074647E /* ManagmentTableViewCell.swift in Sources */,
+				11E70C12260355E100822EF6 /* MOBI200.swift in Sources */,
+				113B9A5F25F0F6C00078D553 /* User.swift in Sources */,
+				11E70C0F2603508D00822EF6 /* MOBI120.swift in Sources */,
+				11D4C77E2624791500D83167 /* AddOrderController.swift in Sources */,
 				11051B7925C9A79D00477F32 /* ClientsViewController.swift in Sources */,
+				11A72D0825F7C80C00E944E7 /* MainClientViewController.swift in Sources */,
+				113CB18526259BD300BDA963 /* CompletedOrdersController.swift in Sources */,
 				111C9C7525C1570900E63289 /* SceneDelegate.swift in Sources */,
-				1122F2EB25CA947900DF9199 /* AddClientController.swift in Sources */,
+				11D4C762261F0F3600D83167 /* AnimationViewController.swift in Sources */,
+				11A72D0525F7C26400E944E7 /* ClientTableViewCell.swift in Sources */,
 				116C372225C98ABC0074647E /* ManagmentViewController.swift in Sources */,
+				11D4C7752624781400D83167 /* OrdersTableViewCell.swift in Sources */,
+				113CB1882625AD3A00BDA963 /* CompletedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +503,12 @@
 		};
 		111C9C8425C1570B00E63289 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB69145FFDB5B0905B3AA415 /* Pods-Worky..debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 928ZPH79LQ;
 				INFOPLIST_FILE = Worky./Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,10 +523,12 @@
 		};
 		111C9C8525C1570B00E63289 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF883269893FB4F6FA275E95 /* Pods-Worky..release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 928ZPH79LQ;
 				INFOPLIST_FILE = Worky./Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

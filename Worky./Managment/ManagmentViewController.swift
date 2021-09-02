@@ -15,14 +15,16 @@ struct Manager {
     var footerName = ""
 }
 
+
+// Here managment blocks store
 class ManagerFabric {
     static func sections() -> [Manager] {
         return [
-            Manager(sectionName: "Клиенты & Работники", imagesArray: ["person.3.fill", "person.crop.square.fill.and.at.rectangle"], imageBackgroundArray: [UIColor.orange, UIColor.orange], array: ["Клиенты", "Работники"], footerName: "Добавляйте новых клиентов и работников."),
-            Manager(sectionName: "Основное", imagesArray: ["figure.stand.line.dotted.figure.stand", "figure.stand"], imageBackgroundArray: [UIColor.link, UIColor.link], array: ["Проекты", "Задания"], footerName: ""),
-            Manager(sectionName: "Учет времени", imagesArray: ["clock.arrow.circlepath", "clock.arrow.2.circlepath", "exclamationmark.arrow.circlepath"], imageBackgroundArray: [UIColor.red, UIColor.red, UIColor.red], array: ["Регулярное рабочее время", "Сумма сверхурочных", "Паузы"], footerName: "Укажите рабочее время для отображения сверхурочный часов и редактируйте сумму сверхурочных, сокращая или добавляю часы. Стандартная пауза будет добавлена по истечению рабочего времени."),
-            Manager(sectionName: "Нерабочее время", imagesArray: ["photo", "asterisk.circle", "number.circle"], imageBackgroundArray: [UIColor.lightGray, UIColor.lightGray, UIColor.lightGray], array: ["Отпускные", "Больничные", "Праздники"], footerName: "Заполните, что бы отобразить нерабочие дни в разделе <<обзор>>."),
-            Manager(sectionName: "Карты", imagesArray: ["list.number"], imageBackgroundArray: [UIColor.link], array: ["Рабочие места"], footerName: "Учет времени на основе местоположения.")
+            Manager(sectionName: "Клиенты", imagesArray: ["person.3.fill", "person.crop.square.fill.and.at.rectangle"], imageBackgroundArray: [UIColor.orange], array: ["Клиенты"], footerName: "Добавляйте новых клиентов."),
+            Manager(sectionName: "Заказы в работе", imagesArray: ["rectangle.fill.on.rectangle.fill"], imageBackgroundArray: [UIColor.link], array: ["Заказы в работе"], footerName: "Добавляйте новые заказы и смотрите существующие."),
+            Manager(sectionName: "Заказы", imagesArray: ["line.horizontal.3.circle.fill"], imageBackgroundArray: [UIColor.red], array: ["Архив"], footerName: "Смотрите все заказы."),
+            Manager(sectionName: "Продукция", imagesArray: ["paperplane.fill", "paperplane.fill", "paperplane.fill", "paperplane.fill"], imageBackgroundArray: [UIColor.lightGray, UIColor.lightGray, UIColor.lightGray, UIColor.lightGray], array: ["МОБИ-120", "МОБИ-200", "МОБИ-250", "МОБИ-300"], footerName: "Быстрый переход к просмотру рубильных машин."),
+            //Manager(sectionName: "Карты", imagesArray: ["list.number"], imageBackgroundArray: [UIColor.link], array: ["Рабочие места"], footerName: "Учет времени на основе местоположения.")
         ]
     }
 }
@@ -74,24 +76,25 @@ extension ManagmentViewController: UITableViewDataSource, UITableViewDelegate {
         if SectionsManager[indexPath.section].array[indexPath.row] == "Клиенты" {
             performSegue(withIdentifier: "showVC1", sender: nil)
         }
-        if SectionsManager[indexPath.section].array[indexPath.row] == "Работники" {
+        if SectionsManager[indexPath.section].array[indexPath.row] == "Заказы в работе" {
             performSegue(withIdentifier: "showVC2", sender: nil)
         }
-        if SectionsManager[indexPath.section].array[indexPath.row] == "Проекты" {
+        if SectionsManager[indexPath.section].array[indexPath.row] == "Архив" {
             performSegue(withIdentifier: "showVC3", sender: nil)
         }
-        if SectionsManager[indexPath.section].array[indexPath.row] == "Задания" {
+        if SectionsManager[indexPath.section].array[indexPath.row] == "МОБИ-120" {
             performSegue(withIdentifier: "showVC4", sender: nil)
         }
-        if SectionsManager[indexPath.section].array[indexPath.row] == "Регулярное рабочее время" {
+        if SectionsManager[indexPath.section].array[indexPath.row] == "МОБИ-200" {
             performSegue(withIdentifier: "showVC51", sender: nil)
         }
-        if SectionsManager[indexPath.section].array[indexPath.row] == "Сумма сверхурочных" {
+        if SectionsManager[indexPath.section].array[indexPath.row] == "МОБИ-250" {
             performSegue(withIdentifier: "showVC5", sender: nil)
         }
-        if SectionsManager[indexPath.section].array[indexPath.row] == "Паузы" {
+        if SectionsManager[indexPath.section].array[indexPath.row] == "МОБИ-300" {
             performSegue(withIdentifier: "showVC6", sender: nil)
         }
+        /*
         if SectionsManager[indexPath.section].array[indexPath.row] == "Отпускные" {
             performSegue(withIdentifier: "showVC7", sender: nil)
         }
@@ -104,5 +107,6 @@ extension ManagmentViewController: UITableViewDataSource, UITableViewDelegate {
         if SectionsManager[indexPath.section].array[indexPath.row] == "Рабочие места" {
             performSegue(withIdentifier: "showVC10", sender: nil)
         }
+ */
     }
 }
